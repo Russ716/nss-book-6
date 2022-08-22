@@ -1,0 +1,32 @@
+.serviceForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#serviceForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.button {
+    margin: 1rem 0 2rem 2rem;
+    padding: 0.5rem;
+    background-color: #88540B;
+    color: lightgoldenrodyellow;
+    font-size: 1rem;
+    border: 15px ridge #88540B;
+    border-radius: 0px 40px 0px 40px;
+    width: 200px;
+}
+.label{
+    font-size: medium;
+}
