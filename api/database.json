@@ -1,25 +1,62 @@
 {
-    "plumbers": [],
-    "completions": [],
-    "requests": [
-        {
-            "id": 1,
-            "description": "Aut sint voluptatem fugit eius quas molestiae modi.",
-            "address": "34445 Bianka Ports",
-            "budget": 400,
-            "neededBy": "2023-08-27"
-        },{
-            "id": 2,
-            "description": "The shower drain is clogged.",
-            "address": "82 Cambridge",
-            "budget": 1400,
-            "neededBy": "2024-10-27"
-        },{
-            "id": 3,
-            "description": "The toilet runs constantly.",
-            "address": "115 Lorfield",
-            "budget": 40,
-            "neededBy": "2023-04-27"
-        }
-    ]
+  "plumbers": [
+    {
+      "id": 1,
+      "name": "Maude"
+    },
+    {
+      "id": 2,
+      "name": "Merle"
+    }
+  ],
+  "completions": [
+    {
+      "requestId": 8,
+      "plumberId": 1,
+      "dateOfCreation": 1661286083073,
+      "id": 4
+    },
+    {
+      "requestId": 7,
+      "plumberId": 1,
+      "dateOfCreation": 1661286475998,
+      "id": 5
+    },
+    {
+      "requestId": 7,
+      "plumberId": 2,
+      "dateOfCreation": 1661286488839,
+      "id": 6
+    }
+  ],
+  "requests": [
+    {
+      "id": 2,
+      "description": "The shower drain is clogged.",
+      "address": "82 Cambridge",
+      "budget": 1400,
+      "neededBy": "2024-10-27"
+    },
+    {
+      "id": 3,
+      "description": "The toilet runs constantly.",
+      "address": "115 Lorfield",
+      "budget": 40,
+      "neededBy": "2023-04-27"
+    },
+    {
+      "description": "I can't feel my face when I'm with you",
+      "address": "1600 Pennsylvania Ave.",
+      "budget": "3.50",
+      "neededBy": "2022-08-24",
+      "id": 5
+    },
+    {
+      "description": "Shower keeps bouncing",
+      "address": "funkytown",
+      "budget": "400",
+      "neededBy": "2022-08-27",
+      "id": 7
+    }
+  ]
 }

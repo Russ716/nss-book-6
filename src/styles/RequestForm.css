@@ -27,6 +27,14 @@
     border-radius: 0px 40px 0px 40px;
     width: 200px;
 }
-.label{
+
+.label {
     font-size: medium;
+}
+
+.request__delete {
+    background-color: #449dd1;
+    color: lightgoldenrodyellow;
+    font-size: 1rem;
+    width: 70px;
 }

@@ -1,4 +1,4 @@
-
+import { sendRequest } from "./dataAccess.js"
 export const ServiceForm = () => {
     let html = `
         <div class="field">
@@ -19,7 +19,30 @@ export const ServiceForm = () => {
         </div>
 
         <button class="button" id="submitRequest">Submit Request</button>
-    `
+    `//^ Build HTML input fields for customer display and entry
 
     return html
 }
+const mainContainer = document.querySelector("#container")
+
+mainContainer.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id === "submitRequest") {
+        //^ Click listener for the "submitRequest" button
+        //& Get what the user typed into the form fields \/
+        const userDescription = document.querySelector("input[name='serviceDescription']").value
+        const userAddress = document.querySelector("input[name='serviceAddress']").value
+        const userBudget = document.querySelector("input[name='serviceBudget']").value
+        const userDate = document.querySelector("input[name='serviceDate']").value
+
+        //& then Make an object out of the user input
+        const dataToSendToAPI = {
+            description: userDescription,
+            address: userAddress,
+            budget: userBudget,
+            neededBy: userDate
+        } //^ JSON automatically adds an ID#, sometimes it needs an existing template though.
+
+        // Send the data to the API for permanent storage
+        sendRequest(dataToSendToAPI)
+    }
+})
