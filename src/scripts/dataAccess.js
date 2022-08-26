@@ -1,3 +1,4 @@
+{babel: true}
 const applicationState = {
     requests: [],
     plumbers: []
